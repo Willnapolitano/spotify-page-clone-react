@@ -3,7 +3,7 @@ import Menu from '../menu/Menu.jsx'
 import Logo from '../../assets/icons/Logo.png'
 import './Header.css'
 
-export default (props) => {
+const Header = (props) => {
     return (
         <div className="header">
             <img src={Logo} alt="Logo"/>
@@ -11,3 +11,5 @@ export default (props) => {
         </div>
     )
 }
+
+export default Header
