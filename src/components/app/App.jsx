@@ -12,6 +12,7 @@ export default class App extends React.Component{
             <div className="app">
                <Header />
                <Main />
+               <Footer />
             </div>
         )
     }

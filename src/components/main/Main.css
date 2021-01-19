@@ -3,10 +3,10 @@
     background: #2D46B9 url(../../assets/img/bursts-mobile.svg) no-repeat;
     background-size: 195%;
     background-position: top 25% center;
-    width: 100%;
     height: 568px;
     text-align: center;
     margin: 0 auto;
+    z-index: 0;
 }
 
 .main-text{
