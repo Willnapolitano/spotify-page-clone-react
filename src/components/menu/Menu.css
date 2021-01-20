@@ -3,17 +3,20 @@
     top: 0px;
     right: 50px;
     cursor: pointer;
+    z-index: 20;
 }
 
 .hamburguer {
-    position: relative;
+    position: fixed;
     display: block;
     background: rgb(250, 247, 247);
     width: 22px;
     height: 3px;
     top: 25px;
-    left: 35px;
+    left: 88.5%;
     transition: 0.3s ease-in-out;
+    z-index: 2;
+
 }
 
 .hamburguer:before,
@@ -37,8 +40,8 @@
 
 input {
     display: none;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
 }
 
 input:checked ~ label .hamburguer{
@@ -53,4 +56,34 @@ input:checked ~ label .hamburguer:before{
 input:checked ~ label .hamburguer:after{
     transform: rotate(-90deg);
     bottom: 0;
+}
+
+.lateral{
+    background-color: #000;
+    position: absolute;
+    height: 100vh;
+    width: 340px;
+    display: block;
+    top: 0px;
+    transition: all .2s ease-in-out;
+    left: 340px;
+}
+
+
+input:checked ~ .lateral{
+    transform: translateX(-340px);
+}
+
+.item-menu{
+    margin-top: 30px;
+    margin-left: 40px;
+    font-size: 16px;
+}
+
+.item-menu-cinza{
+    color: #b2b3b2;
+}
+
+.item-menu-logo{
+    margin-top: 150px;
 }
