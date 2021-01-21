@@ -6,8 +6,10 @@ import './Header.css'
 const Header = (props) => {
     return (
         <div className="header">
-            <img src={Logo} alt="Logo"/>
-            <Menu />
+            <div className="content">
+                <img src={Logo} alt="Logo"/>
+                <Menu />
+            </div>
         </div>
     )
 }

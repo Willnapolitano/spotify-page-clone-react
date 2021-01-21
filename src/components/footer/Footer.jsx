@@ -33,7 +33,7 @@ const Footer = () => {
                     <li><i class="fab fa-1x fa-facebook"></i></li>
                 </ul>
             </nav>
-            <div>
+            <div className="footer-items">
                 <div className="copy">
                     <ul>
                         <h6>Brasil</h6>

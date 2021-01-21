@@ -8,11 +8,38 @@
     position: fixed;
     top: 0;
     z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header img{
     width: 87px;
     height: 27px;
-    margin-top: 3px;
-    margin-left: 05px;
+    margin-left: 20px;
+}
+
+
+
+@media(min-width: 768px){
+    .content{
+        margin: 0 auto;
+        width: 80%;
+    }
+}
+
+@media(min-width: 992px){
+    .header{
+        padding: 1.5rem;
+    }
+    .header img{
+        width: 130px;
+        height: 40px;
+    }
+}
+
+@media(min-width: 1200px){
+    .content{
+        max-width: 1170px;
+    }
 }

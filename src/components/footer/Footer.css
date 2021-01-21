@@ -2,13 +2,19 @@
     height: 100%;
     background-color: #000;
     padding: 50px 15px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .logo img{
     width: 88px;
     height: 28px;
 }
-
+.logo{
+    height: 28px;
+}
 .footer h3{
     color: #919496;
     font-size: 12px;
@@ -75,4 +81,41 @@
     width: 20px;
     margin-left: 10px;
     margin-bottom: 15px;
+}
+
+
+
+@media(min-width: 768px){
+    .footer{
+        width: max-content;
+        margin: 0 auto;
+        flex-direction: row;
+        justify-content: center;
+    }
+    nav{
+        position: relative;
+        top: -43px;
+        left: 20px;
+        margin-right: 50px;
+    }
+
+    .social-icons{
+        position: relative;
+        top: -100px;
+    }
+
+    .footer-items{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .footer-items ul{
+        position: relative;
+        top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+    .footer-items ul h6{
+        margin-right: 20px;
+    }
 }

@@ -13,7 +13,7 @@
     width: 22px;
     height: 3px;
     top: 25px;
-    left: 88.5%;
+    left: 90.5%;
     transition: 0.3s ease-in-out;
     z-index: 2;
 
@@ -62,16 +62,21 @@ input:checked ~ label .hamburguer:after{
     background-color: #000;
     position: absolute;
     height: 100vh;
-    width: 340px;
+    width: 100%;
     display: block;
     top: 0px;
     transition: all .2s ease-in-out;
-    left: 340px;
+    left: 100%;
 }
 
 
 input:checked ~ .lateral{
-    transform: translateX(-340px);
+    transform: translateX(-100%);
+}
+
+.items-menu{
+    position: relative;
+    top: 50px;
 }
 
 .item-menu{
@@ -85,5 +90,39 @@ input:checked ~ .lateral{
 }
 
 .item-menu-logo{
-    margin-top: 150px;
+    margin-top: 620px;
+    margin-left: 15px;
+}
+
+ul{
+    display: none;
+    list-style-type: none;
+    margin-top: 30px;
+}
+ul li{
+    float: left;
+    font-size: 1rem;
+    margin-left: 30px;
+    font-weight: 700;
+}
+
+@media(min-width: 768px){
+    .lateral{
+        width: 50%;
+    }
+}
+
+@media(min-width: 992px){
+    .hamburguer, .lateral, input{
+        display: none;
+    }
+    ul{
+        display: block;
+    }
+}
+
+@media(min-width: 1200px){
+    ul{
+        margin-right: 250px;
+    }
 }

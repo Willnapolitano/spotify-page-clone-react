@@ -31,7 +31,7 @@
 }
 
 
-.main .button{
+.button{
     position: relative;
     top: 130px;
     color: #2940a8;
@@ -47,4 +47,52 @@
 .main a{
     text-decoration: none;
     letter-spacing: 0.26rem;
+}
+
+.content-center{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+@media(min-width: 768px){
+    .main{
+        height: 100vh;
+        background-size: 110%;
+        background-position: left center;
+    }
+
+    .main-text h1{
+        font-size: 104px;
+        margin-bottom: 40px;
+    }
+
+    .content-center{
+        position: relative;
+        top: 8%;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .button{
+        width: 400px;
+        letter-spacing: 0.10rem;
+    }
+}
+
+@media(min-width: 1200px){
+    .main{
+        background: #2D46B9 url(../../assets/img/bursts.svg) no-repeat;
+        background-size: 175%;
+        background-position: 46% 4%;
+    }
+
+    .main-text h1{
+        font-size: 150px;
+    }
+
+    .content-center{
+        width: 60%;
+    }
 }
