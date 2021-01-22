@@ -36,7 +36,7 @@ const Footer = () => {
             <div className="footer-items">
                 <div className="copy">
                     <ul>
-                        <h6>Brasil</h6>
+                        <p>Brasil</p>
                         <img src="https://country-flags.scdn.co/flags/br.svg" alt="" class="svelte-11cxugd" />
                     </ul>
                     <h6>&copy; 2021 Spotify AB</h6>

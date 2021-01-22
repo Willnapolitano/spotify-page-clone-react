@@ -112,10 +112,34 @@
     .footer-items ul{
         position: relative;
         top: 50px;
+        left: -90%;
         display: flex;
-        justify-content: center;
+        justify-content: start;
     }
     .footer-items ul h6{
         margin-right: 20px;
+    }
+
+    .copy{
+        position: relative;
+        left: -380px;
+    }
+
+    .copy p{
+        position: relative;
+        top: -35px;
+        left: 90px;
+        color: #bdc0c2;
+        font-weight: 400;
+    }
+    .copy img{
+        position: relative;
+        top: -30px;
+        left: 85px;
+    }
+
+    .copy h6{
+        position: relative;
+        top: 20%;
     }
 }
